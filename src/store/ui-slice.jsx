@@ -12,5 +12,5 @@ const uiSice = createSlice({
     }
 })
 
-export const toggleMobileMenu = uiSice.actions;
+export const uiActions = uiSice.actions;
 export default uiSice.reducer;

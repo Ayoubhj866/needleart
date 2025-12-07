@@ -2,14 +2,30 @@ import NavItem from "@/components/header/NavItem";
 import { TextAlignStart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { NAV_LINKS } from "@/data/navlinks";
+import { useDispatch, useSelector } from "react-redux";
+import { uiActions } from "@/store/ui-slice";
 
 const Nav = () => {
+    const dispatch = useDispatch();
+    const isVisibleMenuOnMobile = useSelector((state) => state.ui.isMobileMenuOpen);
+
+    const toggleMenuOnMobile = () => {
+        dispatch(uiActions.toggleMobileMenu());
+    }
+
     return (
-        <nav className="flex space-x-4 items-center gap-7">
-            <div className="flex gap-[30px]">
+        <nav className="flex gap-4 lg:gap-[30px] items-center ">
+            {/* discktop navigation */}
+            <div className="flex gap-4 max-md:hidden lg:gap-[30px]">
                 {NAV_LINKS.map((link, index) => <NavItem key={index} url={link.url} label={link.label} />)}
             </div>
-            <Button variant="ghost" size="icon" className="hover:bg-transparent text-muted-foreground transition-colors cursor-pointer">
+
+            {/* mobile navigation */}
+            <div className={`md:hidden absolute top-[61px] z-50 -translate-x-full h-[calc(100vh-61px)] inset-x-0 bg-background flex flex-col gap-[30px] justify-center items-center transition-transform duration-300 ease-in-out ${isVisibleMenuOnMobile ? 'translate-x-0' : ''}`}>
+                {NAV_LINKS.map((link, index) => <NavItem key={index} url={link.url} label={link.label} />)}
+            </div>
+
+            <Button onClick={toggleMenuOnMobile} variant="ghost" size="icon" className="hover:bg-transparent md:hidden text-muted-foreground transition-colors cursor-pointer">
                 <TextAlignStart className="text-foreground size-[30px]" />
             </Button>
         </nav>
