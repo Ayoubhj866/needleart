@@ -21,7 +21,7 @@ const Nav = () => {
             </div>
 
             {/* mobile navigation */}
-            <div className={`md:hidden absolute top-[61px] z-50 -translate-x-full h-[calc(100vh-61px)] inset-x-0 bg-background flex flex-col gap-[30px] justify-center items-center transition-transform duration-300 ease-in-out ${isVisibleMenuOnMobile ? 'translate-x-0' : ''}`}>
+            <div className={`md:hidden absolute top-[77px] z-50 bottom-0 -translate-x-full min-h-[calc(100vh-77px)] inset-x-0 bg-background flex flex-col gap-[30px] justify-start overflow-y-hidden pt-10 items-center transition-transform duration-300 ease-in-out ${isVisibleMenuOnMobile ? 'translate-x-0' : ''}`}>
                 {NAV_LINKS.map((link, index) => <NavItem key={index} url={link.url} label={link.label} />)}
             </div>
 
