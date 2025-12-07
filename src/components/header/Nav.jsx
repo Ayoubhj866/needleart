@@ -1,7 +1,7 @@
 import NavItem from "@/components/header/NavItem";
 import { TextAlignStart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { NAV_LINKS } from "@/data/navlinks";
+import { NAV_LINKS } from "@/data/data.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import { uiActions } from "@/store/ui-slice";
 import FadeUp from "../motion/FadeUp";
