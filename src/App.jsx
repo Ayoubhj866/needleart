@@ -1,9 +1,9 @@
+import Header from '@/components/header/Header';
+
 const App = () => {
-    return (
-        <div>
-            <h1 className="text-red-500">App</h1>
-        </div>
-    )
+    return <div className="min-h-screen">
+        <Header />
+    </div>
 }
 
 export default App;
