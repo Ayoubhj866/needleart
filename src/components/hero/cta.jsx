@@ -5,7 +5,7 @@ import { MoveUpRight } from "lucide-react";
 
 const CTA = () => {
     return (
-        <div className="lg:py-10 flex flex-col gap-y-10 lg:gap-y-[100px] max-lg:mx-auto max-w-[750px] lg:pr-12">
+        <div className="lg:py-9 flex flex-col gap-y-10 lg:gap-y-[100px] max-lg:mx-auto max-w-[750px] lg:pr-12">
             <FadeUp duration={1}>
                 <div className="flex flex-col max-lg:mx-auto gap-y-[30px]">
                     <h1 className="text-5xl max-lg:text-center max-md:text-3xl leading-[141%] font-semibold text-foreground">

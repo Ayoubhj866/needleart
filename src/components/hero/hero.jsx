@@ -18,23 +18,23 @@ const Hero = () => {
                     </FadeUp>
                 </div>
             </div>
-
-            {/*  */}
-            <div className="w-full px-4 xl:px-0 mt-10 bg-muted py-5">
-                <div className="max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-5 mx-auto">
-                    {HERO_DATA.map((item, index) => (
-                        <FadeUp key={index} duration={(index + 1) * 0.5}>
-                            <div key={index} className="flex items-center justify-center lg:justify-start gap-4">
-                                <img src={item.logo} className="size-8" alt={item.title} />
-                                <h2 className="text-lg font-medium text-foreground">
-                                    {item.title}
-                                </h2>
-                            </div>
-                        </FadeUp>
-                    ))}
-                </div>
-            </div>
         </section >
+
+        {/* subhero section */}
+        <section className="w-full px-4 xl:px-0 bg-muted py-6">
+            <div className="max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-5 mx-auto">
+                {HERO_DATA.map((item, index) => (
+                    <FadeUp key={index} duration={(index + 1) * 0.5}>
+                        <div key={index} className="flex items-center justify-center lg:justify-start gap-4">
+                            <img src={item.logo} className="size-8" alt={item.title} />
+                            <h2 className="text-lg font-medium text-foreground">
+                                {item.title}
+                            </h2>
+                        </div>
+                    </FadeUp>
+                ))}
+            </div>
+        </section>
     </>
 }
 
