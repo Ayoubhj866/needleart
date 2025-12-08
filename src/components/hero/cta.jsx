@@ -2,6 +2,7 @@ import FadeUp from "@/components/motion/FadeUp";
 import { Button } from "@/components/ui/button";
 import hero_image2 from "@/assets/hero-assets/image-2.png";
 import { MoveUpRight } from "lucide-react";
+import Paragraph from "@/components/paragraph";
 
 const CTA = () => {
     return (
@@ -31,9 +32,9 @@ const CTA = () => {
                     <div className="space-y-2">
                         <h3 className="text-lg font-semibold">Needleart</h3>
                         <FadeUp duration={1.5}>
-                            <p className="text-muted-foreground font-normal text-base leading-[170%]">
+                            <Paragraph>
                                 We specialize in custom designs, working closely with our clients to transform their ideas into beautiful, one-of-a-kind pieces that they can wear with pride.
-                            </p>
+                            </Paragraph>
                         </FadeUp>
                     </div>
                 </FadeUp>
