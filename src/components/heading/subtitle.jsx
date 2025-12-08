@@ -1,6 +1,6 @@
 const Subtitle = ({ children, className }) => {
     return (
-        <h6 className={`uppercase font-light leading-[150%] text-sm ${className}`}>
+        <h6 className={`font-light leading-[150%] text-sm ${className}`}>
             {children}
         </h6>
     )

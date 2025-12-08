@@ -4,13 +4,10 @@ const FadeUp = ({ children, duration, className }) => {
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.8 }} // Animate once when 80% of the element is in view
             transition={{ duration: duration, ease: "easeOut" }}
-            style={{
-                opacity: 0,
-                y: 20,
-            }}
-            className={` transition-opacity duration-${duration} ease-out ${className}`} // to allow the user to add custom classes
+            className={className}
         >
             {children}
         </motion.div>
