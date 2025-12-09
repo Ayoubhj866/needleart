@@ -6,19 +6,23 @@ import Paragraph from "@/components/paragraph";
 import img1 from "@/assets/services/img-1.png";
 import { SERVICES_DATA } from "@/data/data";
 import Card from "@/components/services/card";
+import LayoutSection from "@/components/layouts/layout-section";
+import FadeUp from "@/components/motion/FadeUp";
 
 const Services = () => {
     return (
-        <section className="py-20 max-w-7xl mx-auto px-4 lg:gap-6 flex flex-col gap-4 xl:px-0 lg:py-[100px]">
+        <LayoutSection>
             <SectionHeader title="Our services" subtitle="What we do" />
 
             {/* services main content */}
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {SERVICES_DATA.map((service) => (
-                    <Card key={service.id} title={service.title} description={service.description} image={service.image} />
+                {SERVICES_DATA.map((service, index) => (
+                    <FadeUp key={service.id} duration={(index + 1) * 0.5}>
+                        <Card key={service.id} title={service.title} description={service.description} image={service.image} />
+                    </FadeUp>
                 ))}
             </div>
-        </section>
+        </LayoutSection>
     )
 }
 

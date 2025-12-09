@@ -40,14 +40,14 @@ export const SERVICES_DATA = [
     },
     {
         'id': 2,
-        'title': "Black & Grey Tattoos",
-        'description': "Where classics monocrome tattoos meet timeless style.",
+        'title': "Color Tattoos",
+        'description': "Vibrant hues and intricate details bring your vision to life.",
         'image': svc_img_2,
     },
     {
         'id': 3,
-        'title': "Black & Grey Tattoos",
-        'description': "Where classics monocrome tattoos meet timeless style.",
+        'title': "Custom Tattoo Designs",
+        'description': "Collaborate with our artists to create your unique masterpiece.",
         'image': svc_img_3,
     },
 ]

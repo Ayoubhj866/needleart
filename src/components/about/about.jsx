@@ -8,10 +8,11 @@ import FadeUp from "@/components/motion/FadeUp";
 import AboutGallery from "@/components/galleries/about-gallery";
 import ButtonUp from '@/components/button';
 import H2 from '@/components/heading/h2';
+import LayoutSection from "@/components/layouts/layout-section";
 
 const About = () => {
     return (
-        <section className="pt-20 max-w-7xl mx-auto px-4 flex flex-col gap-4 md:gap-10 xl:px-0">
+        <LayoutSection>
             <SectionHeader titleOnly={false} title="Our story" subtitle="WHO WE ARE">
                 In our studio, hygiene and professionalism are top priorities. We use the highest quality equipment and follow strict sterilization procedures to provide a safe and comfortable environment for all our clients.
             </SectionHeader>
@@ -65,7 +66,7 @@ const About = () => {
                     </div>
                 </FadeUp>
             </div>
-        </section >
+        </LayoutSection >
     )
 }
 
