@@ -18,7 +18,8 @@ const About = () => {
 
             {/* body */}
             {/* <div className="w-full flex items-center max-md:flex-col gap-4 lg:gap-10"> */}
-            <div className="w-full grid grid-cols-1 md:grid-cols-[auto_1fr] max-md:flex-col gap-6 lg:gap-10">
+            <div className="w-full grid grid-cols-1 md:grid-cols-[auto_1fr] gap-6 lg:gap-10">
+                {/* left */}
                 <FadeUp duration={1}>
                     <div className="space-y-4">
                         <Subtitle className="flex items-center gap-2">
@@ -31,8 +32,9 @@ const About = () => {
                     </div>
                 </FadeUp>
 
+                {/* right */}
                 <FadeUp className="flex flex-col gap-6" duration={1}>
-                    <div className="w-full flex flex-col justify-center h-full flex-1 gap-6 mx-auto">
+                    <div className="w-full flex flex-col justify-center h-full flex-1 gap-4 mx-auto">
                         <H3>
                             The story and vision of our tattoo studio
                         </H3>
@@ -56,7 +58,7 @@ const About = () => {
                     </div>
 
                     <div className="mt-auto space-y-2">
-                        <H2>14 YEARS</H2>
+                        <H3>14 YEARS</H3>
                         <Paragraph>
                             Fourteen Years of Crafting Timeless Tattoos
                         </Paragraph>
