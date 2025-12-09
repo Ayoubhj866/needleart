@@ -43,6 +43,7 @@
     --color-sidebar-ring: var(--sidebar-ring);
 }
 
+/* s'applique au mode light */
 :root {
     --radius: 0.625rem;
     --background: #fff;

@@ -12,7 +12,7 @@ const Hero = () => {
                 <CTA />
 
                 {/* right image */}
-                <div className="max-w-sm flex items-center mx-auto rounded-sm justify-center text-center border border-muted/10 sm:max-w-[546px]">
+                <div className="w-full  flex items-center mx-auto rounded-sm justify-center text-center border border-muted/10 sm:max-w-[546px]">
                     <FadeUp duration={1}>
                         <img src={hero_image} className="rounded-sm mx-auto" alt="hero image" />
                     </FadeUp>
