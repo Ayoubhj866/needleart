@@ -11,7 +11,7 @@ import H2 from '@/components/heading/h2';
 
 const About = () => {
     return (
-        <section className="pt-20 max-w-7xl mx-auto px-4 flex flex-col gap-4 md:gap-20 lg:gap-20 xl:px-0">
+        <section className="pt-20 max-w-7xl mx-auto px-4 flex flex-col gap-4 md:gap-10 xl:px-0">
             <SectionHeader titleOnly={false} title="Our story" subtitle="WHO WE ARE">
                 In our studio, hygiene and professionalism are top priorities. We use the highest quality equipment and follow strict sterilization procedures to provide a safe and comfortable environment for all our clients.
             </SectionHeader>

@@ -9,7 +9,7 @@ import Card from "@/components/services/card";
 
 const Services = () => {
     return (
-        <section className="py-20 max-w-7xl mx-auto px-4 flex flex-col gap-4 md:gap-20 lg:gap-20 xl:px-0 lg:py-[100px]">
+        <section className="py-20 max-w-7xl mx-auto px-4 lg:gap-6 flex flex-col gap-4 xl:px-0 lg:py-[100px]">
             <SectionHeader title="Our services" subtitle="What we do" />
 
             {/* services main content */}

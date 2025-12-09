@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import H4 from "@/components/heading/h4";
 import Paragraph from "@/components/paragraph";
-import { CheckCircleIcon } from "lucide-react";
+import { MoveUpRight } from "lucide-react";
 
 const Card = ({ title, description, image }) => {
     return (
@@ -14,7 +14,7 @@ const Card = ({ title, description, image }) => {
             </div>
 
             <Button variant="outline" className="rounded-full size-2 group-hover:size-10 opacity-0 group-hover:opacity-100 duration-300 transition-all absolute top-5 right-5 hidden group-hover:inline-flex bg-muted" size="icon">
-                <CheckCircleIcon className="w-6 h-6" />
+                <MoveUpRight className="w-6 h-6" />
             </Button>
 
             {/* card body */}
