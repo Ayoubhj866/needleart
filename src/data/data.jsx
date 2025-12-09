@@ -1,6 +1,9 @@
 import heart_logo from "@/assets/hero-assets/heart.png"
 import pen_logo from "@/assets/hero-assets/pen.png"
 import people_logo from "@/assets/hero-assets/peoples.png"
+import svc_img_1 from "@/assets/services/img-1.png"
+import svc_img_2 from "@/assets/services/img-2.png"
+import svc_img_3 from "@/assets/services/img-3.png"
 
 export const NAV_LINKS = [
     { url: "#", label: "ABOUT" },
@@ -26,3 +29,25 @@ export const HERO_DATA = [
         logo: people_logo,
     },
 ];
+
+
+export const SERVICES_DATA = [
+    {
+        'id': 1,
+        'title': "Black & Grey Tattoos",
+        'description': "Where classics monocrome tattoos meet timeless style.",
+        'image': svc_img_1,
+    },
+    {
+        'id': 2,
+        'title': "Black & Grey Tattoos",
+        'description': "Where classics monocrome tattoos meet timeless style.",
+        'image': svc_img_2,
+    },
+    {
+        'id': 3,
+        'title': "Black & Grey Tattoos",
+        'description': "Where classics monocrome tattoos meet timeless style.",
+        'image': svc_img_3,
+    },
+]
