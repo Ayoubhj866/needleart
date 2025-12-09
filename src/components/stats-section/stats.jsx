@@ -25,7 +25,7 @@ const Stats = () => {
                     </FadeUp>
 
                     <FadeUp duration={1.5}>
-                        <div className="flex  gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                             <StatCard description="Happy customers who have experienced our commitment to excellence." count="1600+" />
                             <StatCard description="Where years of dedicated artistry ensure exceptional tattoo quality." count="40" />
                             <StatCard description="Explore our extensive collection of over 3200 unique artworks." count="3000+" />
