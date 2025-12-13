@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import H4 from "@/components/heading/h4";
 import H5 from "@/components/heading/h5";
 import Paragraph from "@/components/paragraph";
+import WorkflowSteep from '@/components/process-workflow/workflow-steep'
 
 const Workflow = () => {
     return (
@@ -29,26 +30,13 @@ const Workflow = () => {
                     </div>
 
                     <div className="flex flex-col gap-5">
-                        <div className="flex flex-col gap-2">
-                            <p className="flex items-center gap-1">
-                                <H5>1.</H5>
-                                <H5>Consultation and Design</H5>
-                            </p>
-                            <Paragraph>
-                                Our artists then create a custom design based on your input, making any necessary adjustments until you’re satisfied with the final artwork.
-                            </Paragraph>
-                        </div>
+                        <WorkflowSteep steepNumber="1" title="Consultation & Design">
+                            Our artists then create a custom design based on your input, making any necessary adjustments until you’re satisfied with the final artwork.
+                        </WorkflowSteep>
 
-                        <div className="flex flex-col gap-2">
-                            <p className="flex items-center gap-1">
-                                <H5>2.</H5>
-                                <H5>Preparation</H5>
-                            </p>
-                            <Paragraph>
-                                We review the design with you, discuss the procedure, ensure you’re comfortable and informed about what to expect.
-                            </Paragraph>
-                        </div>
-
+                        <WorkflowSteep steepNumber="2" title="Preparation">
+                            We review the design with you, discuss the procedure, ensure you’re comfortable and informed about what to expect.
+                        </WorkflowSteep>
                         <div>
                             <img src={img_2} alt="process-workflow image" />
                         </div>
@@ -58,26 +46,13 @@ const Workflow = () => {
                         <div>
                             <img src={img_3} alt="process-workflow image" />
                         </div>
+                        <WorkflowSteep steepNumber="3" title="Consultation & Design">
+                            We focus on precision and your comfort throughout the process, maintaining a clean and safe environment.
+                        </WorkflowSteep>
 
-                        <div className="flex flex-col gap-2">
-                            <p className="flex items-center gap-1">
-                                <H5>3.</H5>
-                                <H5>Consultation and Design</H5>
-                            </p>
-                            <Paragraph>
-                                We focus on precision and your comfort throughout the process, maintaining a clean and safe environment.
-                            </Paragraph>
-                        </div>
-
-                        <div className="flex flex-col gap-2">
-                            <p className="flex items-center gap-1">
-                                <H5>4.</H5>
-                                <H5>Aftercare and Folow up</H5>
-                            </p>
-                            <Paragraph>
-                                We also offer follow-up support to address any questions or concerns as your tattoo heals, ensuring a great result.
-                            </Paragraph>
-                        </div>
+                        <WorkflowSteep steepNumber="1" title="Aftercare & FlowUp">
+                            We also offer follow-up support to address any questions or concerns as your tattoo heals, ensuring a great result.
+                        </WorkflowSteep>
                     </div>
                 </div>
             </div>
