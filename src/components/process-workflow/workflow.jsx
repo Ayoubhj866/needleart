@@ -50,7 +50,7 @@ const Workflow = () => {
                             We focus on precision and your comfort throughout the process, maintaining a clean and safe environment.
                         </WorkflowSteep>
 
-                        <WorkflowSteep steepNumber="1" title="Aftercare & FlowUp">
+                        <WorkflowSteep steepNumber="4" title="Aftercare & FlowUp">
                             We also offer follow-up support to address any questions or concerns as your tattoo heals, ensuring a great result.
                         </WorkflowSteep>
                     </div>
