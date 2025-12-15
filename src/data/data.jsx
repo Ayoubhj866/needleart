@@ -64,14 +64,14 @@ export const MEMBERS = [
     },
     {
         'id': 2,
-        'name': "Marvin McKinney",
-        'position': "Piercing Specialist",
+        'name': "Esther Howards",
+        'position': "Watercolor Tattoo Artist",
         'image': img_2,
     },
     {
         'id': 3,
-        'name': "Marvin McKinney",
-        'position': "Piercing Specialist",
+        'name': "Leslie Alexander",
+        'position': "Lead Tattoo Artist",
         'image': img_3,
     },
 ]
